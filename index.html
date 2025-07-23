@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Banking System Modernization | Interactive Report</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Interactive analysis of core banking system modernization strategies, covering migration pathways, vendor solutions, and regulatory compliance.">
+    <meta name="keywords" content="banking modernization, COBOL migration, mainframe, cloud migration, fintech">
+    <meta name="author" content="Banking Technology Analysis">
+    
+    <!-- External Dependencies via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏦</text></svg>">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="smooth-scroll">
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded">Skip to main content</a>
+
+    <!-- Navigation Header -->
+    <header id="header" class="bg-white/90 backdrop-blur-md shadow-lg sticky top-0 z-50 no-print">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="font-bold text-xl text-gray-800">🏦 Core Modernization Report</h1>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex items-baseline space-x-4" role="menubar">
+                        <li role="none">
+                            <a href="#dilemma" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 border-b-2 border-transparent" role="menuitem">The Dilemma</a>
+                        </li>
+                        <li role="none">
+                            <a href="#pathways" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 border-b-2 border-transparent" role="menuitem">Pathways</a>
+                        </li>
+                        <li role="none">
+                            <a href="#analysis" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 border-b-2 border-transparent" role="menuitem">Cost & ROI</a>
+                        </li>
+                        <li role="none">
+                            <a href="#vendors" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 border-b-2 border-transparent" role="menuitem">Vendors</a>
+                        </li>
+                        <li role="none">
+                            <a href="#israel" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 border-b-2 border-transparent" role="menuitem">Israeli Context</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 bg-gradient-to-br from-blue-50 to-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Navigating the Digital Frontier
+                </h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-600 mb-4">
+                    An interactive analysis of core banking system modernization, moving from legacy mainframes to agile, cloud-native architectures.
+                </p>
+                <p class="max-w-3xl mx-auto text-sm text-gray-500">
+                    This resource explores strategies, risks, and opportunities for banking technology transformation.
+                </p>
+                <div class="mt-8">
+                    <a href="#dilemma" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 inline-block">
+                        Start Exploring →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legacy vs Modern Comparison -->
+        <section id="dilemma" class="py-16 md:py-24 section-fade-in">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">The Core Dilemma: Legacy vs. Modern</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Banks face a critical choice between the proven stability of mainframes and the strategic agility of modern platforms.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Legacy Systems Card -->
+                    <div class="content-card">
+                        <div class="text-center mb-6">
+                            <div class="text-4xl mb-2">🏛️</div>
+                            <h3 class="text-2xl font-bold text-gray-800">Legacy: IBM z/OS & COBOL</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6 text-center">
+                            The bedrock of banking for decades, prized for unparalleled security, reliability, and high-volume transaction processing.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="icon-list-item">
+                                <span class="icon text-green-600" aria-hidden="true">✓</span>
+                                <div>
+                                    <strong class="block text-green-800">Rock-Solid Reliability</strong> 
+                                    Engineered for mission-critical uptime, processing 87% of all credit card transactions.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-green-600" aria-hidden="true">✓</span>
+                                <div>
+                                    <strong class="block text-green-800">Hardened Security</strong> 
+                                    Renowned for robust security frameworks essential for protecting sensitive financial data.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-red-500" aria-hidden="true">✗</span>
+                                <div>
+                                    <strong class="block text-red-800">Agility Constraints</strong> 
+                                    Monolithic architecture hinders rapid product innovation and integration with modern APIs.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-red-500" aria-hidden="true">✗</span>
+                                <div>
+                                    <strong class="block text-red-800">Skills Gap & High Cost</strong> 
+                                    An aging developer workforce and high maintenance costs consume up to 70% of IT budgets.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Modern Systems Card -->
+                    <div class="content-card">
+                        <div class="text-center mb-6">
+                            <div class="text-4xl mb-2">☁️</div>
+                            <h3 class="text-2xl font-bold text-blue-800">Modern: Cloud-Native & Microservices</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6 text-center">
+                            An architectural shift designed for agility, scalability, and continuous innovation in the digital-first era.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="icon-list-item">
+                                <span class="icon text-green-600" aria-hidden="true">✓</span>
+                                <div>
+                                    <strong class="block text-green-800">Enhanced Agility & Speed</strong> 
+                                    Accelerate new product launches by up to 60% through independent service deployment.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-green-600" aria-hidden="true">✓</span>
+                                <div>
+                                    <strong class="block text-green-800">Elastic Scalability</strong> 
+                                    Scale services independently based on real-time demand, optimizing cost and performance.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-red-500" aria-hidden="true">✗</span>
+                                <div>
+                                    <strong class="block text-red-800">Architectural Complexity</strong> 
+                                    Distributed systems introduce challenges in data consistency (ACID vs. BASE) and require new skills.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-red-500" aria-hidden="true">✗</span>
+                                <div>
+                                    <strong class="block text-red-800">Migration Risk & Hidden Costs</strong> 
+                                    The journey is complex, with risks of operational disruption and unforeseen costs.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Migration Pathways Section -->
+        <section id="pathways" class="py-16 md:py-24 bg-white section-fade-in">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Modernization Pathways: The 6 Rs</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Choosing the right migration strategy is a critical decision. Explore the "6 Rs" framework 
+                        to understand the options, from simple lift-and-shift to complete rebuild.
+                    </p>
+                </div>
+                
+                <!-- Strategy Selection Buttons -->
+                <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-8" role="tablist" aria-label="Migration strategies">
+                    <button class="strategy-btn active" data-strategy="rehost" role="tab" aria-selected="true" id="tab-rehost" aria-controls="strategy-content">Rehost</button>
+                    <button class="strategy-btn" data-strategy="replatform" role="tab" aria-selected="false" id="tab-replatform" aria-controls="strategy-content">Replatform</button>
+                    <button class="strategy-btn" data-strategy="refactor" role="tab" aria-selected="false" id="tab-refactor" aria-controls="strategy-content">Refactor</button>
+                    <button class="strategy-btn" data-strategy="rebuild" role="tab" aria-selected="false" id="tab-rebuild" aria-controls="strategy-content">Rebuild</button>
+                    <button class="strategy-btn" data-strategy="retire" role="tab" aria-selected="false" id="tab-retire" aria-controls="strategy-content">Retire</button>
+                    <button class="strategy-btn" data-strategy="retain" role="tab" aria-selected="false" id="tab-retain" aria-controls="strategy-content">Retain</button>
+                </div>
+                
+                <!-- Strategy Content Container -->
+                <div id="strategy-content" class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg border content-transition" role="tabpanel" aria-live="polite">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Cost & ROI Analysis Section -->
+        <section id="analysis" class="py-16 md:py-24 section-fade-in">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Cost & ROI Analysis</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Modernization is a significant investment. This section visualizes quantifiable benefits 
+                        against legacy maintenance costs to inform the business case.
+                    </p>
+                </div>
+                
+                <!-- Charts Grid -->
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
+                    <!-- Benefits Chart -->
+                    <div class="content-card">
+                        <h3 class="text-xl font-bold text-center mb-4">📈 Quantifiable Benefits of Modernization</h3>
+                        <div class="chart-container">
+                            <canvas id="benefitsChart" aria-label="Benefits of modernization chart showing percentage improvements across different metrics"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- Maintenance Cost Chart -->
+                    <div class="content-card">
+                        <h3 class="text-xl font-bold text-center mb-4">💰 IT Budget Distribution</h3>
+                        <div class="chart-container">
+                            <canvas id="maintenanceCostChart" aria-label="IT budget distribution showing legacy maintenance vs new development"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Financial Analysis Details -->
+                <div class="mt-12 content-card max-w-5xl mx-auto">
+                    <h3 class="text-2xl font-bold text-center mb-6">💡 The Full Financial Picture</h3>
+                    <p class="text-center text-gray-600 mb-8">Understanding both the hidden costs and hidden values is crucial for accurate ROI calculations.</p>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg text-red-700 mb-4 flex items-center">
+                                <span class="text-2xl mr-2">⚠️</span>
+                                Hidden Costs of Cloud Migration
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">•</span>
+                                    Data egress fees for large transfers
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">•</span>
+                                    Application refactoring & reengineering
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">•</span>
+                                    Underutilized / over-provisioned resources
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">•</span>
+                                    New security & compliance tooling
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">•</span>
+                                    Employee training & skill gaps
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">•</span>
+                                    Downtime & productivity losses
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-green-700 mb-4 flex items-center">
+                                <span class="text-2xl mr-2">💎</span>
+                                Hidden Value of Mainframes
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">•</span>
+                                    Software savings via core efficiency & zIIPs
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">•</span>
+                                    Superior energy & space efficiency
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">•</span>
+                                    Mission-critical uptime preventing costly outages
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">•</span>
+                                    Built-in, quantum-safe security & compliance
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">•</span>
+                                    High-speed, consolidated workload processing
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">•</span>
+                                    Faster ROI through process improvements
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vendor Landscape Section -->
+        <section id="vendors" class="py-16 md:py-24 bg-white section-fade-in">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">🏢 The Vendor Landscape</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Major technology vendors offer distinct approaches to mainframe modernization. 
+                        Select a vendor to explore their strategy and key offerings.
+                    </p>
+                </div>
+                
+                <!-- Vendor Logo Grid -->
+                <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-8" id="vendor-logos">
+                    <div class="vendor-logo" data-vendor="aws" tabindex="0" role="button" aria-label="Learn about AWS modernization approach">
+                        <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" 
+                             alt="AWS Logo" class="h-12 w-auto">
+                    </div>
+                    <div class="vendor-logo" data-vendor="ibm" tabindex="0" role="button" aria-label="Learn about IBM modernization approach">
+                        <img src="https://img.shields.io/badge/IBM-052FAD?style=for-the-badge&logo=ibm&logoColor=white" 
+                             alt="IBM Logo" class="h-12 w-auto">
+                    </div>
+                    <div class="vendor-logo" data-vendor="google" tabindex="0" role="button" aria-label="Learn about Google Cloud modernization approach">
+                        <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" 
+                             alt="Google Cloud Logo" class="h-12 w-auto">
+                    </div>
+                    <div class="vendor-logo" data-vendor="azure" tabindex="0" role="button" aria-label="Learn about Microsoft Azure modernization approach">
+                        <img src="https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" 
+                             alt="Microsoft Azure Logo" class="h-12 w-auto">
+                    </div>
+                    <div class="vendor-logo" data-vendor="microfocus" tabindex="0" role="button" aria-label="Learn about Micro Focus modernization approach">
+                        <img src="https://img.shields.io/badge/Micro%20Focus-00B140?style=for-the-badge&logo=&logoColor=white" 
+                             alt="Micro Focus Logo" class="h-12 w-auto">
+                    </div>
+                </div>
+                
+                <!-- Vendor Content Container -->
+                <div id="vendor-content" class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg border content-transition" aria-live="polite">
+                    <div class="text-center text-gray-500">
+                        <div class="text-4xl mb-4">👆</div>
+                        <p>Select a vendor logo above to see their modernization strategy and offerings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Israeli Context Section -->
+        <section id="israel" class="py-16 md:py-24 section-fade-in">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">🇮🇱 Israeli Banking Context</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Banking modernization in Israel must navigate specific regulatory requirements 
+                        and compliance frameworks set by the Bank of Israel.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Regulations Card -->
+                    <div class="content-card">
+                        <h3 class="text-xl font-bold mb-6 flex items-center">
+                            <span class="text-2xl mr-3">📋</span>
+                            Key Bank of Israel Directives
+                        </h3>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="icon-list-item">
+                                <span class="text-blue-600 mr-3 mt-1 text-lg">▶</span>
+                                <div>
+                                    <strong class="text-blue-800">Cloud for Core Systems:</strong> 
+                                    Permitted for "material systems" under strict risk management, governance, and board approval (Directive 362).
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="text-blue-600 mr-3 mt-1 text-lg">▶</span>
+                                <div>
+                                    <strong class="text-blue-800">Data Residency:</strong> 
+                                    Data can be stored outside Israel if the provider complies with GDPR-level protection.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="text-blue-600 mr-3 mt-1 text-lg">▶</span>
+                                <div>
+                                    <strong class="text-blue-800">Cybersecurity Framework:</strong> 
+                                    Unified framework (Directive 364) mandates integrated risk management and strong authentication.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="text-blue-600 mr-3 mt-1 text-lg">▶</span>
+                                <div>
+                                    <strong class="text-blue-800">Open Banking:</strong> 
+                                    Mandates for ISO 20022 and third-party access require secure, API-driven architectures.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Recommendations Card -->
+                    <div class="content-card">
+                        <h3 class="text-xl font-bold mb-6 flex items-center">
+                            <span class="text-2xl mr-3">🎯</span>
+                            Strategic Recommendations
+                        </h3>
+                        <ol class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">1</span>
+                                <span>Conduct comprehensive, AI-powered assessment of mainframe estate</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">2</span>
+                                <span>Adopt phased, incremental modernization strategy to mitigate risk</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">3</span>
+                                <span>Invest heavily in talent transformation and COBOL developer upskilling</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">4</span>
+                                <span>Leverage AI and automation for code conversion and testing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">5</span>
+                                <span>Prioritize data modernization and rigorous dual-run validation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">6</span>
+                                <span>Ensure regulatory compliance and cybersecurity throughout process</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">7</span>
+                                <span>Develop holistic TCO model and embrace hybrid cloud strategy</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 no-print">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="text-2xl mb-4">🏦</div>
+                <h3 class="text-xl font-bold mb-2">Banking Modernization Analysis</h3>
+                <p class="text-gray-400 mb-4">Interactive report on core banking system transformation strategies</p>
+                <div class="border-t border-gray-700 pt-4">
+                    <p class="text-sm text-gray-500">
+                        Generated for strategic analysis and discussion • 
+                        <time datetime="2025-07-23">July 23, 2025</time>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+    
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Interactive analysis of core banking system modernization strategies for Bank Mizrahi-Tefahot, covering migration pathways, vendor solutions, and regulatory compliance.">
+    
+    <!-- Application Configuration -->
+    <script>
+        // Global app configuration
+        window.APP_CONFIG = {
+            name: 'Banking Modernization Report',
+            version: '2.0.0',
+            environment: 'production',
+            features: {
+                charts: true,
+                animations: true,
+                analytics: false
+            }
+        };
+    </script>
+</head>
+<body class="smooth-scroll">
+    <!-- Navigation Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-bold text-xl text-gray-800">Core Modernization</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#dilemma" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 border-b-2 border-transparent">The Dilemma</a>
+                        <a href="#pathways" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 border-b-2 border-transparent">Pathways</a>
+                        <a href="#analysis" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 border-b-2 border-transparent">Cost & ROI</a>
+                        <a href="#vendors" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 border-b-2 border-transparent">Vendors</a>
+                        <a href="#israel" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 border-b-2 border-transparent">Israeli Context</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                    Navigating the Digital Frontier
+                </h1>
+                <p class="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-600">
+                    An interactive analysis of core banking system modernization, moving from legacy mainframes to agile, cloud-native architectures.
+                </p>
+                <p class="mt-2 max-w-3xl mx-auto text-sm text-gray-500">
+                    This resource is designed for technical leaders at Bank Mizrahi-Tefahot to explore strategies, risks, and opportunities.
+                </p>
+            </div>
+        </section>
+
+        <!-- Legacy vs Modern Comparison -->
+        <section id="dilemma" class="py-16 md:py-24 section-fade-in">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">The Core Dilemma: Legacy vs. Modern</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-2xl mx-auto">
+                        Banks face a critical choice between the proven stability of mainframes and the strategic agility of modern platforms. 
+                        This section breaks down the fundamental characteristics of each paradigm.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Legacy Systems Card -->
+                    <div class="content-card">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Legacy: IBM z/OS & COBOL</h3>
+                        <p class="text-gray-600 mb-6">
+                            The bedrock of banking for decades, prized for unparalleled security, reliability, and high-volume transaction processing.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="icon-list-item">
+                                <span class="icon text-green-600">✓</span>
+                                <div>
+                                    <strong class="block">Rock-Solid Reliability:</strong> 
+                                    Engineered for mission-critical uptime, processing 87% of all credit card transactions.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-green-600">✓</span>
+                                <div>
+                                    <strong class="block">Hardened Security:</strong> 
+                                    Renowned for robust security frameworks essential for protecting sensitive financial data.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-red-500">✗</span>
+                                <div>
+                                    <strong class="block">Agility Constraints:</strong> 
+                                    Monolithic architecture hinders rapid product innovation and integration with modern APIs.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-red-500">✗</span>
+                                <div>
+                                    <strong class="block">Skills Gap & High Cost:</strong> 
+                                    An aging developer workforce and high maintenance costs consume up to 70% of IT budgets.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Modern Systems Card -->
+                    <div class="content-card">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">Modern: Cloud-Native & Microservices</h3>
+                        <p class="text-gray-600 mb-6">
+                            An architectural shift designed for agility, scalability, and continuous innovation in the digital-first era.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="icon-list-item">
+                                <span class="icon text-green-600">✓</span>
+                                <div>
+                                    <strong class="block">Enhanced Agility & Speed:</strong> 
+                                    Accelerate new product launches by up to 60% through independent service deployment.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-green-600">✓</span>
+                                <div>
+                                    <strong class="block">Elastic Scalability:</strong> 
+                                    Scale services independently based on real-time demand, optimizing cost and performance.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-red-500">✗</span>
+                                <div>
+                                    <strong class="block">Architectural Complexity:</strong> 
+                                    Distributed systems introduce challenges in data consistency (ACID vs. BASE) and require new skills.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="icon text-red-500">✗</span>
+                                <div>
+                                    <strong class="block">Migration Risk & Hidden Costs:</strong> 
+                                    The journey is complex, with risks of operational disruption and unforeseen costs like data egress fees.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Migration Pathways Section -->
+        <section id="pathways" class="py-16 md:py-24 bg-white section-fade-in">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Modernization Pathways: The 6 Rs</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-2xl mx-auto">
+                        Choosing the right migration strategy is a critical decision. Explore the common "6 Rs" framework 
+                        to understand the options, from a simple lift-and-shift to a complete rebuild.
+                    </p>
+                </div>
+                
+                <!-- Strategy Selection Buttons -->
+                <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-8">
+                    <button class="strategy-btn active" data-strategy="rehost">Rehost</button>
+                    <button class="strategy-btn" data-strategy="replatform">Replatform</button>
+                    <button class="strategy-btn" data-strategy="refactor">Refactor</button>
+                    <button class="strategy-btn" data-strategy="rebuild">Rebuild</button>
+                    <button class="strategy-btn" data-strategy="retire">Retire</button>
+                    <button class="strategy-btn" data-strategy="retain">Retain</button>
+                </div>
+                
+                <!-- Strategy Content Container -->
+                <div id="strategy-content" class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg border content-transition">
+                    <!-- Content will be populated by StrategyManager -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Cost & ROI Analysis Section -->
+        <section id="analysis" class="py-16 md:py-24 section-fade-in">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Cost & ROI Analysis</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-2xl mx-auto">
+                        Modernization is a significant investment. This section visualizes the quantifiable benefits 
+                        against the backdrop of legacy maintenance costs to inform the business case.
+                    </p>
+                </div>
+                
+                <!-- Charts Grid -->
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+                    <!-- Benefits Chart -->
+                    <div class="content-card">
+                        <h3 class="text-xl font-bold text-center mb-4">Quantifiable Benefits of Modernization</h3>
+                        <div class="chart-container">
+                            <canvas id="benefitsChart" aria-label="Benefits of modernization chart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- Maintenance Cost Chart -->
+                    <div class="content-card">
+                        <h3 class="text-xl font-bold text-center mb-4">IT Budget Consumed by Legacy Maintenance</h3>
+                        <div class="chart-container">
+                            <canvas id="maintenanceCostChart" aria-label="Legacy maintenance cost chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Financial Analysis Details -->
+                <div class="mt-12 content-card max-w-5xl mx-auto">
+                    <h3 class="text-2xl font-bold text-center mb-6">The Full Financial Picture: Beyond Surface Costs</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg text-red-700 mb-2">Hidden Costs of Cloud Migration</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-600">
+                                <li>Data Egress Fees for large transfers</li>
+                                <li>Application Refactoring & Reengineering</li>
+                                <li>Underutilized / Over-provisioned resources</li>
+                                <li>New Security & Compliance tooling</li>
+                                <li>Employee Training & Skill Gaps</li>
+                                <li>Downtime & Productivity Losses</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-green-700 mb-2">Hidden Value of Mainframes</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-600">
+                                <li>Software savings via core efficiency & zIIPs</li>
+                                <li>Superior energy & space efficiency</li>
+                                <li>Mission-critical uptime preventing costly outages</li>
+                                <li>Built-in, quantum-safe security & compliance</li>
+                                <li>High-speed, consolidated workload processing</li>
+                                <li>Faster ROI through process improvements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vendor Landscape Section -->
+        <section id="vendors" class="py-16 md:py-24 bg-white section-fade-in">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">The Vendor Landscape</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-2xl mx-auto">
+                        Major technology vendors offer distinct approaches to mainframe modernization. 
+                        Select a vendor to explore their strategy and key offerings.
+                    </p>
+                </div>
+                
+                <!-- Vendor Logo Grid -->
+                <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-8" id="vendor-logos">
+                    <img src="https://placehold.co/120x60/000000/FFFFFF?text=AWS" 
+                         alt="AWS Logo" 
+                         class="vendor-logo" 
+                         data-vendor="aws"
+                         loading="lazy">
+                    <img src="https://placehold.co/120x60/000000/FFFFFF?text=IBM" 
+                         alt="IBM Logo" 
+                         class="vendor-logo" 
+                         data-vendor="ibm"
+                         loading="lazy">
+                    <img src="https://placehold.co/120x60/000000/FFFFFF?text=Google" 
+                         alt="Google Cloud Logo" 
+                         class="vendor-logo" 
+                         data-vendor="google"
+                         loading="lazy">
+                    <img src="https://placehold.co/120x60/000000/FFFFFF?text=Azure" 
+                         alt="Microsoft Azure Logo" 
+                         class="vendor-logo" 
+                         data-vendor="azure"
+                         loading="lazy">
+                    <img src="https://placehold.co/120x60/000000/FFFFFF?text=Micro+Focus" 
+                         alt="Micro Focus Logo" 
+                         class="vendor-logo" 
+                         data-vendor="microfocus"
+                         loading="lazy">
+                </div>
+                
+                <!-- Vendor Content Container -->
+                <div id="vendor-content" class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg border content-transition">
+                    <!-- Content will be populated by VendorManager -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Israeli Context Section -->
+        <section id="israel" class="py-16 md:py-24 section-fade-in">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">The Israeli Context: Regulations & Recommendations</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">
+                        Modernization for Bank Mizrahi-Tefahot must be navigated within the specific framework 
+                        of the Bank of Israel's directives and the bank's strategic goals.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Regulations Card -->
+                    <div class="content-card">
+                        <h3 class="text-xl font-bold mb-4">Key Bank of Israel Directives</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="icon-list-item">
+                                <span class="text-blue-600 mr-3 mt-1">▶</span>
+                                <div>
+                                    <strong>Cloud for Core Systems:</strong> Permitted for "material systems" under strict 
+                                    risk management, governance, and board approval (Directive 362).
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="text-blue-600 mr-3 mt-1">▶</span>
+                                <div>
+                                    <strong>Data Residency:</strong> Data can be stored outside Israel if the provider 
+                                    complies with GDPR-level protection. The AWS Israel Region helps meet local needs.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="text-blue-600 mr-3 mt-1">▶</span>
+                                <div>
+                                    <strong>Cybersecurity Framework:</strong> Unified framework (Directive 364) mandates 
+                                    integrated risk management, supply chain cyber risk management, and strong authentication.
+                                </div>
+                            </li>
+                            <li class="icon-list-item">
+                                <span class="text-blue-600 mr-3 mt-1">▶</span>
+                                <div>
+                                    <strong>Open Banking:</strong> Mandates for ISO 20022 and third-party access 
+                                    require secure, API-driven architectures.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Recommendations Card -->
+                    <div class="content-card">
+                        <h3 class="text-xl font-bold mb-4">Top Recommendations for Bank Mizrahi-Tefahot</h3>
+                        <ol class="space-y-3 text-gray-700 list-decimal list-inside">
+                            <li>Conduct a comprehensive, AI-powered assessment of the mainframe estate.</li>
+                            <li>Adopt a phased, incremental modernization strategy to mitigate risk.</li>
+                            <li>Invest heavily in talent transformation and upskilling for COBOL developers.</li>
+                            <li>Leverage AI and automation judiciously for code conversion and testing.</li>
+                            <li>Prioritize data modernization, consistency, and rigorous dual-run validation.</li>
+                            <li>Ensure unwavering regulatory compliance and cybersecurity throughout the process.</li>
+                            <li>Develop a holistic TCO model and embrace hybrid cloud as a strategic path.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>This interactive report is a synthesized analysis for strategic discussion.</p>
+            <p class="text-sm text-gray-400 mt-2">Generated on July 23, 2025. For internal use at Bank Mizrahi-Tefahot.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
